@@ -3,6 +3,7 @@
   "%Name":"obj_modal",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":49,"eventType":5,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_modal",
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"window",
-    "path":"sprites/window/window.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
