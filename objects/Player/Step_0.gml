@@ -8,13 +8,21 @@
 var l29F0DAE7_0 = instance_place(x, y, [obj_interactable_parent]);
 if ((l29F0DAE7_0 > 0))
 {
-	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
-	/// @DnDHash : 3691DF53
+	/// @DnDHash : 38F7FD71
 	/// @DnDParent : 29F0DAE7
-	/// @DnDArgument : "expr" "true"
-	/// @DnDArgument : "var" "interactable"
-	interactable = true;
+	/// @DnDArgument : "expr" "obj_interactable_parent.crop_linked.is_interactable"
+	if(obj_interactable_parent.crop_linked.is_interactable)
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 3691DF53
+		/// @DnDParent : 38F7FD71
+		/// @DnDArgument : "expr" "true"
+		/// @DnDArgument : "var" "interactable"
+		interactable = true;
+	}
 }
 
 /// @DnDAction : YoYo Games.Common.Else

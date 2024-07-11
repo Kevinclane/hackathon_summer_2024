@@ -12,12 +12,21 @@ if(global.window_is_open)
 	/// @DnDArgument : "var" "global.game_is_paused"
 	global.game_is_paused = true;
 
-	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 4CA12C6A
+	/// @DnDHash : 7FC3C530
 	/// @DnDParent : 7CBD9134
-	/// @DnDArgument : "objectid" "obj_modal"
-	/// @DnDArgument : "layer" ""Instances_1""
-	/// @DnDSaveInfo : "objectid" "obj_modal"
-	instance_create_layer(0, 0, "Instances_1", obj_modal);
+	/// @DnDArgument : "var" "global.active_instance.modal_option"
+	/// @DnDArgument : "value" ""crop_field_empty""
+	if(global.active_instance.modal_option == "crop_field_empty")
+	{
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 4CA12C6A
+		/// @DnDParent : 7FC3C530
+		/// @DnDArgument : "objectid" "obj_empty_crop_modal"
+		/// @DnDArgument : "layer" ""Instances_1""
+		/// @DnDSaveInfo : "objectid" "obj_empty_crop_modal"
+		instance_create_layer(0, 0, "Instances_1", obj_empty_crop_modal);
+	}
 }

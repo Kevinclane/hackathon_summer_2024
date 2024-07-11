@@ -13,8 +13,9 @@ if(interactable)
 	/// @DnDVersion : 1
 	/// @DnDHash : 7D52A7DC
 	/// @DnDParent : 1F3940E1
+	/// @DnDArgument : "x" "5"
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "caption" ""F""
-	draw_text(x + 0, y + 0, string("F") + "");
+	draw_text(x + 5, y + 0, string("F") + "");
 }
