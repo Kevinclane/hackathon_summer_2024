@@ -39,6 +39,7 @@
     {"$GMObjectProperty":"v1","%Name":"crop_stage","filters":[],"listItems":[],"multiselect":false,"name":"crop_stage","rangeEnabled":true,"rangeMax":4.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"action_needed","filters":[],"listItems":[],"multiselect":false,"name":"action_needed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"modal_option","filters":[],"listItems":[],"multiselect":false,"name":"modal_option","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"crop_field_empty","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"harvest_value","filters":[],"listItems":[],"multiselect":false,"name":"harvest_value","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

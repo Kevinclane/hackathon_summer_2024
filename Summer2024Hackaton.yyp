@@ -71,6 +71,7 @@
     {"id":{"name":"decorations_medieval","path":"sprites/decorations_medieval/decorations_medieval.yy",},},
     {"id":{"name":"fence_medieval","path":"sprites/fence_medieval/fence_medieval.yy",},},
     {"id":{"name":"floors","path":"sprites/floors/floors.yy",},},
+    {"id":{"name":"Gold_Coin","path":"sprites/Gold_Coin/Gold_Coin.yy",},},
     {"id":{"name":"Idle_Down","path":"sprites/Idle_Down/Idle_Down.yy",},},
     {"id":{"name":"Idle_Left","path":"sprites/Idle_Left/Idle_Left.yy",},},
     {"id":{"name":"Idle_Right","path":"sprites/Idle_Right/Idle_Right.yy",},},
