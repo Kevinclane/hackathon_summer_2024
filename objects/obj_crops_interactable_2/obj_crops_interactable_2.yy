@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_crops_interactable",
+  "%Name":"obj_crops_interactable_2",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"Player","path":"objects/Player/Player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_crops_interactable",
+  "name":"obj_crops_interactable_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

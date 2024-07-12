@@ -1,3 +1,17 @@
+/// @DnDAction : YoYo Games.Instances.Instance_Get_Count
+/// @DnDVersion : 1
+/// @DnDHash : 2C9D0F28
+/// @DnDArgument : "var" "c"
+/// @DnDArgument : "object" "obj_empty_crop_modal"
+/// @DnDSaveInfo : "object" "obj_empty_crop_modal"
+c = instance_number(obj_empty_crop_modal);
+
+/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDVersion : 1
+/// @DnDHash : 2078AEF7
+/// @DnDArgument : "msg" ""{0}", c"
+show_debug_message(string("{0}", c));
+
 /// @DnDAction : YoYo Games.Common.Get_Global
 /// @DnDVersion : 1
 /// @DnDHash : 0966E5F3

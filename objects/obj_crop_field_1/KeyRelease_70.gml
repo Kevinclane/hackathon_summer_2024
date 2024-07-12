@@ -36,13 +36,11 @@ if(is_interactable)
 	/// @DnDParent : 35D6D35D
 	else
 	{
-		/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
-		/// @DnDHash : 6E561FAB
+		/// @DnDHash : 523DEB7C
 		/// @DnDParent : 09D54667
-		/// @DnDArgument : "spriteind" "CropsBlank"
-		/// @DnDSaveInfo : "spriteind" "CropsBlank"
-		sprite_index = CropsBlank;
-		image_index = 0;
+		/// @DnDArgument : "function" "reset_instance"
+		reset_instance();
 	}
 }

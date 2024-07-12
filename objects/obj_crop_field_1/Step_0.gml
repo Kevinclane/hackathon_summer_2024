@@ -41,8 +41,8 @@ if(action_needed == "next_stage")
 			/// @DnDVersion : 1
 			/// @DnDHash : 4153B880
 			/// @DnDParent : 5680C249
-			/// @DnDArgument : "steps" "10 * 60"
-			alarm_set(0, 10 * 60);
+			/// @DnDArgument : "steps" "1 * 60"
+			alarm_set(0, 1 * 60);
 		
 			/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
@@ -133,28 +133,20 @@ if(action_needed == "next_stage")
 						/// @DnDAction : YoYo Games.Instances.Set_Sprite
 						/// @DnDVersion : 1
 						/// @DnDHash : 3A3CAFEE
+						/// @DnDComment : TODO: rename modal option $(13_10)Add new value to harvest crop
 						/// @DnDParent : 24EAA62F
 						/// @DnDArgument : "spriteind" "CropsStage4_Wheat"
 						/// @DnDSaveInfo : "spriteind" "CropsStage4_Wheat"
 						sprite_index = CropsStage4_Wheat;
 						image_index = 0;
 					}
-					break;
-			
-				/// @DnDAction : YoYo Games.Switch.Default
-				/// @DnDVersion : 1
-				/// @DnDHash : 19DDA065
-				/// @DnDParent : 6F0DDFBA
-				default:
-					/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+				
+					/// @DnDAction : YoYo Games.Instances.Set_Alarm
 					/// @DnDVersion : 1
-					/// @DnDHash : 49C8E120
-					/// @DnDParent : 19DDA065
-					/// @DnDArgument : "x_relative" "1"
-					/// @DnDArgument : "y_relative" "1"
-					/// @DnDArgument : "sprite" "CropsBlank"
-					/// @DnDSaveInfo : "sprite" "CropsBlank"
-					draw_sprite(CropsBlank, 0, x + 0, y + 0);
+					/// @DnDHash : 66971C89
+					/// @DnDParent : 1CF5C795
+					/// @DnDArgument : "steps" "-1"
+					alarm_set(0, -1);
 					break;
 			}
 			break;
