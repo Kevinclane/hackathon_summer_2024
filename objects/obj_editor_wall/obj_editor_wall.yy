@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_manager",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_editor_wall",
+  "eventList":[],
   "managed":true,
-  "name":"obj_manager",
+  "name":"obj_editor_wall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collision_parent",
+    "path":"objects/obj_collision_parent/obj_collision_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_editor_wall",
+    "path":"sprites/spr_editor_wall/spr_editor_wall.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

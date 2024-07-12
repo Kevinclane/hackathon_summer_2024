@@ -2,8 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 783D459F
 /// @DnDArgument : "funcName" "reset_instance"
-/// @DnDArgument : "constructor" "1"
-function reset_instance() constructor
+function reset_instance() 
 {
 	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 	/// @DnDVersion : 1
@@ -13,14 +12,6 @@ function reset_instance() constructor
 	/// @DnDSaveInfo : "spriteind" "CropsBlank"
 	sprite_index = CropsBlank;
 	image_index = 0;
-
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 2CD45F95
-	/// @DnDParent : 783D459F
-	/// @DnDArgument : "expr" "false"
-	/// @DnDArgument : "var" "global.game_is_paused"
-	global.game_is_paused = false;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -52,10 +43,11 @@ function reset_instance() constructor
 	/// @DnDArgument : "var" "modal_option"
 	modal_option = "crop_field_empty";
 
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDVersion : 1
-	/// @DnDHash : 41CABB6A
+	/// @DnDHash : 3EAB6303
 	/// @DnDParent : 783D459F
-	/// @DnDArgument : "msg" ""Resetting instance: {0}", self"
-	show_debug_message(string("Resetting instance: {0}", self));
+	/// @DnDArgument : "value" "false"
+	/// @DnDArgument : "var" "global.game_is_paused"
+	global.game_is_paused = false;
 }

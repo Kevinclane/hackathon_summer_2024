@@ -8,8 +8,8 @@
   "name":"obj_crops_interactable_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"crop_1",
+    "path":"folders/Objects/crop_1.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable_parent",
@@ -29,7 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"crop_linked","filters":[],"listItems":[],"multiselect":false,"name":"crop_linked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"crop_linked","filters":[],"listItems":[],"multiselect":false,"name":"crop_linked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"crop_1","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

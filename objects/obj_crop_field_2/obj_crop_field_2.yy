@@ -13,8 +13,8 @@
   "name":"obj_crop_field_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"crop_2",
+    "path":"folders/Objects/crop_2.yy",
   },
   "parentObjectId":{
     "name":"obj_collision_parent",

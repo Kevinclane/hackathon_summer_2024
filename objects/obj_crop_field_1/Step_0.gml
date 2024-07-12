@@ -1,3 +1,27 @@
+/// @DnDAction : YoYo Games.Common.Get_Global
+/// @DnDVersion : 1
+/// @DnDHash : 21E71634
+/// @DnDArgument : "output" "ai"
+/// @DnDArgument : "var" "global.active_instance"
+ai = global.active_instance;
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 42DD7608
+/// @DnDArgument : "var" "ai"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "value" "self"
+if(!(ai == self))
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 267D102A
+	/// @DnDParent : 42DD7608
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "is_interactable"
+	is_interactable = false;
+}
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0F08564E

@@ -4,13 +4,6 @@
 /// @DnDArgument : "expr" "is_interactable"
 if(is_interactable)
 {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 20A511B2
-	/// @DnDParent : 35D6D35D
-	/// @DnDArgument : "msg" ""Up: 1""
-	show_debug_message(string("Up: 1"));
-
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3FC716FF
@@ -20,23 +13,21 @@ if(is_interactable)
 	/// @DnDArgument : "value" "noone"
 	if(!(modal_option == noone))
 	{
-		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDAction : YoYo Games.Common.Set_Global
 		/// @DnDVersion : 1
-		/// @DnDHash : 4C942CB0
+		/// @DnDHash : 68E2BDE7
 		/// @DnDParent : 3FC716FF
-		/// @DnDArgument : "var" "modal"
-		/// @DnDArgument : "objectid" "obj_crop_1_modal"
-		/// @DnDArgument : "layer" ""Instances_1""
-		/// @DnDSaveInfo : "objectid" "obj_crop_1_modal"
-		modal = instance_create_layer(0, 0, "Instances_1", obj_crop_1_modal);
+		/// @DnDArgument : "value" "true"
+		/// @DnDArgument : "var" "global.window_is_open"
+		global.window_is_open = true;
 	
 		/// @DnDAction : YoYo Games.Common.Set_Global
 		/// @DnDVersion : 1
-		/// @DnDHash : 7CE88953
+		/// @DnDHash : 15D426DD
 		/// @DnDParent : 3FC716FF
-		/// @DnDArgument : "value" "true"
-		/// @DnDArgument : "var" "global.game_is_paused"
-		global.game_is_paused = true;
+		/// @DnDArgument : "value" "self"
+		/// @DnDArgument : "var" "global.active_instance"
+		global.active_instance = self;
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else

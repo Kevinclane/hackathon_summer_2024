@@ -11,3 +11,9 @@ global.window_is_open = false;
 /// @DnDArgument : "value" "false"
 /// @DnDArgument : "var" "global.game_is_paused"
 global.game_is_paused = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 76E75842
+/// @DnDArgument : "var" "global.active_instance"
+global.active_instance = 0;

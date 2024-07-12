@@ -2,8 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 783D459F
 /// @DnDArgument : "funcName" "reset_instance"
-/// @DnDArgument : "constructor" "1"
-function reset_instance() constructor
+function reset_instance() 
 {
 	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 	/// @DnDVersion : 1
@@ -13,14 +12,6 @@ function reset_instance() constructor
 	/// @DnDSaveInfo : "spriteind" "CropsBlank"
 	sprite_index = CropsBlank;
 	image_index = 0;
-
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 0F9DB78D
-	/// @DnDParent : 783D459F
-	/// @DnDArgument : "expr" "true"
-	/// @DnDArgument : "var" "Player.interactable"
-	Player.interactable = true;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -51,4 +42,12 @@ function reset_instance() constructor
 	/// @DnDArgument : "expr" ""crop_field_empty""
 	/// @DnDArgument : "var" "modal_option"
 	modal_option = "crop_field_empty";
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 3EAB6303
+	/// @DnDParent : 783D459F
+	/// @DnDArgument : "value" "false"
+	/// @DnDArgument : "var" "global.game_is_paused"
+	global.game_is_paused = false;
 }
