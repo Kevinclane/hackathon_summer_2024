@@ -36,6 +36,8 @@
     {"$GMObjectProperty":"v1","%Name":"error_color","filters":[],"listItems":[],"multiselect":false,"name":"error_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF3232FF","varType":7,},
     {"$GMObjectProperty":"v1","%Name":"button_border_color","filters":[],"listItems":[],"multiselect":false,"name":"button_border_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFCCCCCC","varType":7,},
     {"$GMObjectProperty":"v1","%Name":"mode","filters":[],"listItems":[],"multiselect":false,"name":"mode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sell","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"plow_cost","filters":[],"listItems":[],"multiselect":false,"name":"plow_cost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{gold: 20, wood: 30}","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"axe_cost","filters":[],"listItems":[],"multiselect":false,"name":"axe_cost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{gold: 50, wood: 40}","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

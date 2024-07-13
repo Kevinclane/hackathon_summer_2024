@@ -1,5 +1,19 @@
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
+/// @DnDHash : 19001917
+/// @DnDArgument : "funcName" "calculate_harvest_value"
+function calculate_harvest_value() 
+{
+	/// @DnDAction : YoYo Games.Common.Return
+	/// @DnDVersion : 1
+	/// @DnDHash : 7AA36D00
+	/// @DnDParent : 19001917
+	/// @DnDArgument : "value" "base_harvest_value + (5 * Player.upgrades.plow)"
+	return base_harvest_value + (5 * Player.upgrades.plow);
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
 /// @DnDHash : 783D459F
 /// @DnDArgument : "funcName" "reset_instance"
 function reset_instance() 
@@ -58,6 +72,15 @@ function reset_instance()
 /// @DnDArgument : "funcName" "harvest"
 function harvest() 
 {
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 7696E344
+	/// @DnDParent : 398258DE
+	/// @DnDArgument : "var" "harvest_value"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "function" "calculate_harvest_value"
+	var harvest_value = calculate_harvest_value();
+
 	/// @DnDAction : YoYo Games.Switch.Switch
 	/// @DnDVersion : 1
 	/// @DnDHash : 16190892

@@ -4,13 +4,6 @@
 /// @DnDArgument : "expr" "is_interactable"
 if(is_interactable)
 {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 365CCA63
-	/// @DnDParent : 35D6D35D
-	/// @DnDArgument : "msg" ""Up: 2""
-	show_debug_message(string("Up: 2"));
-
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3FC716FF

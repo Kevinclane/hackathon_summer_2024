@@ -24,15 +24,35 @@ if(mode == "Sell")
 	/// @DnDVersion : 1
 	/// @DnDHash : 1D12B8DB
 	/// @DnDParent : 1A580A67
-	/// @DnDArgument : "function" "drawButtonOne"
-	drawButtonOne();
+	/// @DnDArgument : "function" "drawSellButtonOne"
+	drawSellButtonOne();
 
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 040F1647
 	/// @DnDParent : 1A580A67
-	/// @DnDArgument : "function" "drawButtonTwo"
-	drawButtonTwo();
+	/// @DnDArgument : "function" "drawSellButtonTwo"
+	drawSellButtonTwo();
+}
+
+/// @DnDAction : YoYo Games.Common.Else
+/// @DnDVersion : 1
+/// @DnDHash : 48D46AB1
+else
+{
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 19C46E39
+	/// @DnDParent : 48D46AB1
+	/// @DnDArgument : "function" "drawBuyButtonOne"
+	drawBuyButtonOne();
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 7DA8AA81
+	/// @DnDParent : 48D46AB1
+	/// @DnDArgument : "function" "drawBuyButtonTwo"
+	drawBuyButtonTwo();
 }
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
