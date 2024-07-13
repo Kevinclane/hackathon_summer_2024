@@ -28,9 +28,9 @@ draw_set_alpha(l67020454_0 / $ff);
 /// @DnDHash : 0922DC1B
 /// @DnDArgument : "x" "6"
 /// @DnDArgument : "y" "6"
-/// @DnDArgument : "sprite" "Gold_Coin"
-/// @DnDSaveInfo : "sprite" "Gold_Coin"
-draw_sprite(Gold_Coin, 0, 6, 6);
+/// @DnDArgument : "sprite" "spr_gold_coin_icon"
+/// @DnDSaveInfo : "sprite" "spr_gold_coin_icon"
+draw_sprite(spr_gold_coin_icon, 0, 6, 6);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -45,9 +45,9 @@ draw_text(50, 15, string(Player.resources.gold) + "");
 /// @DnDHash : 0B8DC88D
 /// @DnDArgument : "x" "6"
 /// @DnDArgument : "y" "56"
-/// @DnDArgument : "sprite" "WheatIcon1"
-/// @DnDSaveInfo : "sprite" "WheatIcon1"
-draw_sprite(WheatIcon1, 0, 6, 56);
+/// @DnDArgument : "sprite" "spr_wheat_icon"
+/// @DnDSaveInfo : "sprite" "spr_wheat_icon"
+draw_sprite(spr_wheat_icon, 0, 6, 56);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -62,9 +62,9 @@ draw_text(50, 65, string(Player.resources.wheat) + "");
 /// @DnDHash : 5BFDE977
 /// @DnDArgument : "x" "6"
 /// @DnDArgument : "y" "106"
-/// @DnDArgument : "sprite" "RadishIcon1"
-/// @DnDSaveInfo : "sprite" "RadishIcon1"
-draw_sprite(RadishIcon1, 0, 6, 106);
+/// @DnDArgument : "sprite" "spr_radish_icon"
+/// @DnDSaveInfo : "sprite" "spr_radish_icon"
+draw_sprite(spr_radish_icon, 0, 6, 106);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -73,3 +73,20 @@ draw_sprite(RadishIcon1, 0, 6, 106);
 /// @DnDArgument : "y" "115"
 /// @DnDArgument : "caption" "Player.resources.radish"
 draw_text(50, 115, string(Player.resources.radish) + "");
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 31D0AB45
+/// @DnDArgument : "x" "6"
+/// @DnDArgument : "y" "156"
+/// @DnDArgument : "sprite" "spr_wood_icon"
+/// @DnDSaveInfo : "sprite" "spr_wood_icon"
+draw_sprite(spr_wood_icon, 0, 6, 156);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 63CD56D0
+/// @DnDArgument : "x" "50"
+/// @DnDArgument : "y" "165"
+/// @DnDArgument : "caption" "Player.resources.wood"
+draw_text(50, 165, string(Player.resources.wood) + "");

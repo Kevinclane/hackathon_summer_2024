@@ -51,3 +51,49 @@ function reset_instance()
 	/// @DnDArgument : "var" "global.game_is_paused"
 	global.game_is_paused = false;
 }
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 398258DE
+/// @DnDArgument : "funcName" "harvest"
+function harvest() 
+{
+	/// @DnDAction : YoYo Games.Switch.Switch
+	/// @DnDVersion : 1
+	/// @DnDHash : 16190892
+	/// @DnDParent : 398258DE
+	/// @DnDArgument : "expr" "crop_type"
+	var l16190892_0 = crop_type;
+	switch(l16190892_0)
+	{
+		/// @DnDAction : YoYo Games.Switch.Case
+		/// @DnDVersion : 1
+		/// @DnDHash : 09735102
+		/// @DnDParent : 16190892
+		/// @DnDArgument : "const" ""wheat""
+		case "wheat":
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 2022FA04
+			/// @DnDParent : 09735102
+			/// @DnDArgument : "expr" "Player.resources.wheat + harvest_value"
+			/// @DnDArgument : "var" "Player.resources.wheat"
+			Player.resources.wheat = Player.resources.wheat + harvest_value;
+			break;
+	
+		/// @DnDAction : YoYo Games.Switch.Case
+		/// @DnDVersion : 1
+		/// @DnDHash : 05A5452A
+		/// @DnDParent : 16190892
+		/// @DnDArgument : "const" ""radish""
+		case "radish":
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 3965DA90
+			/// @DnDParent : 05A5452A
+			/// @DnDArgument : "expr" "Player.resources.radish + harvest_value"
+			/// @DnDArgument : "var" "Player.resources.radish"
+			Player.resources.radish = Player.resources.radish + harvest_value;
+			break;
+	}
+}

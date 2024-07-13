@@ -1,26 +1,9 @@
-/// @DnDAction : YoYo Games.Common.Get_Global
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 21E71634
-/// @DnDArgument : "output" "ai"
-/// @DnDArgument : "var" "global.active_instance"
-ai = global.active_instance;
-
-/// @DnDAction : YoYo Games.Common.If_Variable
-/// @DnDVersion : 1
-/// @DnDHash : 42DD7608
-/// @DnDArgument : "var" "ai"
-/// @DnDArgument : "not" "1"
-/// @DnDArgument : "value" "self"
-if(!(ai == self))
-{
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 267D102A
-	/// @DnDParent : 42DD7608
-	/// @DnDArgument : "expr" "false"
-	/// @DnDArgument : "var" "is_interactable"
-	is_interactable = false;
-}
+/// @DnDHash : 267D102A
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "is_interactable"
+is_interactable = false;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -65,8 +48,8 @@ if(action_needed == "next_stage")
 			/// @DnDVersion : 1
 			/// @DnDHash : 4153B880
 			/// @DnDParent : 5680C249
-			/// @DnDArgument : "steps" "1 * 60"
-			alarm_set(0, 1 * 60);
+			/// @DnDArgument : "steps" "10 * 60"
+			alarm_set(0, 10 * 60);
 		
 			/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1

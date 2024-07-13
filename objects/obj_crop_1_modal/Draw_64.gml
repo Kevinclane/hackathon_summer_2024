@@ -73,7 +73,7 @@ draw_rectangle(556, 71, 604, 144, 0);
 /// @DnDArgument : "y" "75"
 /// @DnDArgument : "sprite" "WheatIcon1"
 /// @DnDSaveInfo : "sprite" "WheatIcon1"
-draw_sprite(WheatIcon1, 0, 500, 75);
+draw_sprite(spr_wheat_icon, 0, 500, 75);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 /// @DnDVersion : 1
@@ -83,7 +83,7 @@ draw_sprite(WheatIcon1, 0, 500, 75);
 /// @DnDArgument : "y" "75"
 /// @DnDArgument : "sprite" "RadishIcon1"
 /// @DnDSaveInfo : "sprite" "RadishIcon1"
-draw_sprite(RadishIcon1, 0, 560, 75);
+draw_sprite(spr_radish_icon, 0, 560, 75);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1

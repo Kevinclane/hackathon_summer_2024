@@ -1,6 +1,7 @@
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 29F0DAE7
+/// @DnDComment : This should handle the$(13_10)toggle to display of "F"$(13_10)based on if the object$(13_10)is_interactable
 /// @DnDArgument : "x" "x"
 /// @DnDArgument : "y" "y"
 /// @DnDArgument : "object" "obj_interactable_parent"

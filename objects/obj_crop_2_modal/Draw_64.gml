@@ -71,9 +71,9 @@ draw_rectangle(556, 71, 604, 144, 0);
 /// @DnDComment : Button 1 Icon
 /// @DnDArgument : "x" "500"
 /// @DnDArgument : "y" "75"
-/// @DnDArgument : "sprite" "WheatIcon1"
-/// @DnDSaveInfo : "sprite" "WheatIcon1"
-draw_sprite(WheatIcon1, 0, 500, 75);
+/// @DnDArgument : "sprite" "spr_wheat_icon"
+/// @DnDSaveInfo : "sprite" "spr_wheat_icon"
+draw_sprite(spr_wheat_icon, 0, 500, 75);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 /// @DnDVersion : 1
@@ -81,9 +81,9 @@ draw_sprite(WheatIcon1, 0, 500, 75);
 /// @DnDComment : Button 2 Icon
 /// @DnDArgument : "x" "560"
 /// @DnDArgument : "y" "75"
-/// @DnDArgument : "sprite" "RadishIcon1"
-/// @DnDSaveInfo : "sprite" "RadishIcon1"
-draw_sprite(RadishIcon1, 0, 560, 75);
+/// @DnDArgument : "sprite" "spr_radish_icon"
+/// @DnDSaveInfo : "sprite" "spr_radish_icon"
+draw_sprite(spr_radish_icon, 0, 560, 75);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1

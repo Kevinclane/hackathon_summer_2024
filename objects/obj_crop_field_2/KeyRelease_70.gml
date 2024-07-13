@@ -47,6 +47,13 @@ if(is_interactable)
 	{
 		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
+		/// @DnDHash : 4903C6E7
+		/// @DnDParent : 09D54667
+		/// @DnDArgument : "function" "harvest"
+		harvest();
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
 		/// @DnDHash : 523DEB7C
 		/// @DnDParent : 09D54667
 		/// @DnDArgument : "function" "reset_instance"

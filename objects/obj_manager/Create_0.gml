@@ -12,8 +12,9 @@ global.window_is_open = false;
 /// @DnDArgument : "var" "global.game_is_paused"
 global.game_is_paused = false;
 
-/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
-/// @DnDHash : 76E75842
-/// @DnDArgument : "var" "global.active_instance"
-global.active_instance = 0;
+/// @DnDHash : 5786339A
+/// @DnDArgument : "font" "Font1"
+/// @DnDSaveInfo : "font" "Font1"
+draw_set_font(Font1);
