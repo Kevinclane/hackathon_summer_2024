@@ -3,13 +3,6 @@
 /// @DnDHash : 21EEAAB8
 /// @DnDApplyTo : crop_1
 with(crop_1) {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 361F7823
-	/// @DnDParent : 21EEAAB8
-	/// @DnDArgument : "msg" ""This is Modal 1""
-	show_debug_message(string("This is Modal 1"));
-
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7929BDD9

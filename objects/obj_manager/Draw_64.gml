@@ -74,6 +74,42 @@ draw_sprite(spr_radish_icon, 0, 6, 106);
 /// @DnDArgument : "caption" "Player.resources.radish"
 draw_text(50, 115, string(Player.resources.radish) + "");
 
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 07CE96C3
+/// @DnDArgument : "var" "pig_pen.count"
+/// @DnDArgument : "op" "2"
+if(pig_pen.count > 0)
+{
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 45A664DD
+	/// @DnDParent : 07CE96C3
+	/// @DnDArgument : "color" "$FF2CACCC"
+	draw_set_colour($FF2CACCC & $ffffff);
+	var l45A664DD_0=($FF2CACCC >> 24);
+	draw_set_alpha(l45A664DD_0 / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 56DA1D85
+	/// @DnDParent : 07CE96C3
+	/// @DnDArgument : "x" "65"
+	/// @DnDArgument : "y" "117"
+	/// @DnDArgument : "xscale" ".8"
+	/// @DnDArgument : "yscale" ".8"
+	/// @DnDArgument : "caption" ""(-{0})", pig_pen.count * 10"
+	draw_text_transformed(65, 117, string("(-{0})", pig_pen.count * 10) + "", .8, .8, 0);
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 4A8C4DAE
+	/// @DnDParent : 07CE96C3
+	draw_set_colour($FFFFFFFF & $ffffff);
+	var l4A8C4DAE_0=($FFFFFFFF >> 24);
+	draw_set_alpha(l4A8C4DAE_0 / $ff);
+}
+
 /// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 /// @DnDVersion : 1
 /// @DnDHash : 31D0AB45
@@ -90,3 +126,20 @@ draw_sprite(spr_wood_icon, 0, 6, 156);
 /// @DnDArgument : "y" "165"
 /// @DnDArgument : "caption" "Player.resources.wood"
 draw_text(50, 165, string(Player.resources.wood) + "");
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 40DAC901
+/// @DnDArgument : "x" "6"
+/// @DnDArgument : "y" "206"
+/// @DnDArgument : "sprite" "spr_meat_icon"
+/// @DnDSaveInfo : "sprite" "spr_meat_icon"
+draw_sprite(spr_meat_icon, 0, 6, 206);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 1ECFA2C9
+/// @DnDArgument : "x" "50"
+/// @DnDArgument : "y" "215"
+/// @DnDArgument : "caption" "Player.resources.meat"
+draw_text(50, 215, string(Player.resources.meat) + "");

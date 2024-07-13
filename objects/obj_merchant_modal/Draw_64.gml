@@ -33,6 +33,13 @@ if(mode == "Sell")
 	/// @DnDParent : 1A580A67
 	/// @DnDArgument : "function" "drawSellButtonTwo"
 	drawSellButtonTwo();
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 0EB358EA
+	/// @DnDParent : 1A580A67
+	/// @DnDArgument : "function" "drawSellButtonThree"
+	drawSellButtonThree();
 }
 
 /// @DnDAction : YoYo Games.Common.Else
@@ -53,6 +60,13 @@ else
 	/// @DnDParent : 48D46AB1
 	/// @DnDArgument : "function" "drawBuyButtonTwo"
 	drawBuyButtonTwo();
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 19C0ABEE
+	/// @DnDParent : 48D46AB1
+	/// @DnDArgument : "function" "drawBuyButtonThree"
+	drawBuyButtonThree();
 }
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
