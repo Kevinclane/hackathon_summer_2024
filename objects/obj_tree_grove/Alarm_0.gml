@@ -4,12 +4,6 @@
 /// @DnDArgument : "function" "harvest"
 harvest();
 
-/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-/// @DnDVersion : 1
-/// @DnDHash : 01B59764
-/// @DnDArgument : "msg" ""alarm: harvesting""
-show_debug_message(string("alarm: harvesting"));
-
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 6BCBBCA7

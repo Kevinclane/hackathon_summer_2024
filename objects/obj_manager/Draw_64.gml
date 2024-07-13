@@ -70,9 +70,9 @@ draw_sprite(spr_radish_icon, 0, 6, 106);
 /// @DnDVersion : 1
 /// @DnDHash : 53F292F8
 /// @DnDArgument : "x" "50"
-/// @DnDArgument : "y" "115"
+/// @DnDArgument : "y" "110"
 /// @DnDArgument : "caption" "Player.resources.radish"
-draw_text(50, 115, string(Player.resources.radish) + "");
+draw_text(50, 110, string(Player.resources.radish) + "");
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -94,12 +94,12 @@ if(pig_pen.count > 0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 56DA1D85
 	/// @DnDParent : 07CE96C3
-	/// @DnDArgument : "x" "65"
-	/// @DnDArgument : "y" "117"
+	/// @DnDArgument : "x" "50"
+	/// @DnDArgument : "y" "130"
 	/// @DnDArgument : "xscale" ".8"
 	/// @DnDArgument : "yscale" ".8"
 	/// @DnDArgument : "caption" ""(-{0})", pig_pen.count * 10"
-	draw_text_transformed(65, 117, string("(-{0})", pig_pen.count * 10) + "", .8, .8, 0);
+	draw_text_transformed(50, 130, string("(-{0})", pig_pen.count * 10) + "", .8, .8, 0);
 
 	/// @DnDAction : YoYo Games.Drawing.Set_Color
 	/// @DnDVersion : 1

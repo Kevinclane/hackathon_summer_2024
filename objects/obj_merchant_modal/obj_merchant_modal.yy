@@ -40,6 +40,7 @@
     {"$GMObjectProperty":"v1","%Name":"plow_cost","filters":[],"listItems":[],"multiselect":false,"name":"plow_cost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{gold: 20, wood: 30}","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"axe_cost","filters":[],"listItems":[],"multiselect":false,"name":"axe_cost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{gold: 50, wood: 40}","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"pig_cost","filters":[],"listItems":[],"multiselect":false,"name":"pig_cost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"default_font_color","filters":[],"listItems":[],"multiselect":false,"name":"default_font_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

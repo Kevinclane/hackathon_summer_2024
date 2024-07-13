@@ -1,9 +1,3 @@
-/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-/// @DnDVersion : 1
-/// @DnDHash : 555EE383
-/// @DnDArgument : "msg" ""mode: {0}", mode"
-show_debug_message(string("mode: {0}", mode));
-
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 64FF3886

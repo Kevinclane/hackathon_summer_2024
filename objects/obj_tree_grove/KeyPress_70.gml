@@ -4,13 +4,6 @@
 /// @DnDArgument : "expr" "is_interactable"
 if(is_interactable)
 {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 09BA5F88
-	/// @DnDParent : 78FBC374
-	/// @DnDArgument : "msg" ""F down""
-	show_debug_message(string("F down"));
-
 	/// @DnDAction : YoYo Games.Instances.Set_Alarm
 	/// @DnDVersion : 1
 	/// @DnDHash : 40BE9352

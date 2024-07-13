@@ -1,9 +1,3 @@
-/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-/// @DnDVersion : 1
-/// @DnDHash : 70007972
-/// @DnDArgument : "msg" ""mode: {0}", mode"
-show_debug_message(string("mode: {0}", mode));
-
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6DB3FC4A
@@ -24,9 +18,9 @@ if(mode == "Sell")
 		/// @DnDVersion : 1
 		/// @DnDHash : 5C4D96FE
 		/// @DnDParent : 3A973C29
-		/// @DnDArgument : "expr" "Player.resources.gold + 10"
+		/// @DnDArgument : "expr" "Player.resources.gold + 5"
 		/// @DnDArgument : "var" "Player.resources.gold"
-		Player.resources.gold = Player.resources.gold + 10;
+		Player.resources.gold = Player.resources.gold + 5;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1

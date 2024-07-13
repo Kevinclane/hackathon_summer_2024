@@ -10,9 +10,9 @@ if(mode == "Buy")
 	/// @DnDHash : 59929805
 	/// @DnDParent : 64B63659
 	/// @DnDArgument : "var" "pig_pen.count"
-	/// @DnDArgument : "op" "3"
+	/// @DnDArgument : "op" "1"
 	/// @DnDArgument : "value" "3"
-	if(pig_pen.count <= 3)
+	if(pig_pen.count < 3)
 	{
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
