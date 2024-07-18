@@ -43,19 +43,6 @@ else
 	/// @DnDArgument : "var" "pig_pen.count"
 	pig_pen.count = pig_pen.count - 1;
 
-	/// @DnDAction : YoYo Games.Instances.Create_Instance
-	/// @DnDVersion : 1
-	/// @DnDHash : 1A0F89C7
-	/// @DnDParent : 73A8AEBB
-	/// @DnDArgument : "xpos" "32"
-	/// @DnDArgument : "xpos_relative" "1"
-	/// @DnDArgument : "ypos" "32"
-	/// @DnDArgument : "ypos_relative" "1"
-	/// @DnDArgument : "objectid" "obj_tombstone"
-	/// @DnDArgument : "layer" ""Instances_1""
-	/// @DnDSaveInfo : "objectid" "obj_tombstone"
-	instance_create_layer(x + 32, y + 32, "Instances_1", obj_tombstone);
-
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 0106BEA6

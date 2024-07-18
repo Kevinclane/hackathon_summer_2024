@@ -31,4 +31,11 @@ if(is_interactable)
 	/// @DnDArgument : "value" "false"
 	/// @DnDArgument : "var" "global.game_is_paused"
 	global.game_is_paused = false;
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 136AB318
+	/// @DnDParent : 2C83C179
+	/// @DnDArgument : "function" "Player.stopChopping"
+	Player.stopChopping();
 }

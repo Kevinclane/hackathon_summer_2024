@@ -19,8 +19,8 @@
   "name":"Player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"v1","%Name":"interactable","filters":[],"listItems":[],"multiselect":false,"name":"interactable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"resources","filters":[],"listItems":[],"multiselect":false,"name":"resources","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{gold: 0, wheat: 0, radish: 0, wood: 0, meat: 0}","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"upgrades","filters":[],"listItems":[],"multiselect":false,"name":"upgrades","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{plow: 0, axe: 0}","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"overlay1","filters":[],"listItems":[],"multiselect":false,"name":"overlay1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
