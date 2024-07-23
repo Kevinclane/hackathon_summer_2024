@@ -2,9 +2,8 @@
 /// @DnDVersion : 1.1
 /// @DnDHash : 60699381
 /// @DnDArgument : "soundid" "UI_Button_Wood_01"
-/// @DnDArgument : "offset" ".1"
 /// @DnDSaveInfo : "soundid" "UI_Button_Wood_01"
-audio_play_sound(UI_Button_Wood_01, 0, 0, 1.0, .1, 1.0);
+audio_play_sound(UI_Button_Wood_01, 0, 0, 1.0, undefined, 1.0);
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1

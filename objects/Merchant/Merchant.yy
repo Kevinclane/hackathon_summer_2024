@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Merchant_Idle_Left",
-    "path":"sprites/Merchant_Idle_Left/Merchant_Idle_Left.yy",
+    "name":"Merchant_Idle_Down",
+    "path":"sprites/Merchant_Idle_Down/Merchant_Idle_Down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

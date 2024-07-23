@@ -42,6 +42,6 @@ if(is_interactable)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4CFC8937
 	/// @DnDParent : 78FBC374
-	/// @DnDArgument : "function" "obj_music_player.StartChoppingSound"
-	obj_audio_manager.StartChoppingSound();
+	/// @DnDArgument : "function" "obj_audio_manager.startChoppingSound"
+	obj_audio_manager.startChoppingSound();
 }
