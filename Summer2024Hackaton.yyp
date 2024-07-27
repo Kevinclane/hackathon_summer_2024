@@ -71,7 +71,7 @@
     {"id":{"name":"obj_crop_field","path":"objects/obj_crop_field/obj_crop_field.yy",},},
     {"id":{"name":"obj_crop_modal","path":"objects/obj_crop_modal/obj_crop_modal.yy",},},
     {"id":{"name":"obj_editor_wall","path":"objects/obj_editor_wall/obj_editor_wall.yy",},},
-    {"id":{"name":"obj_interactable_parent","path":"objects/obj_interactable_parent/obj_interactable_parent.yy",},},
+    {"id":{"name":"obj_interactable_manager","path":"objects/obj_interactable_manager/obj_interactable_manager.yy",},},
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
     {"id":{"name":"obj_merchant_interactable","path":"objects/obj_merchant_interactable/obj_merchant_interactable.yy",},},
     {"id":{"name":"obj_merchant_modal","path":"objects/obj_merchant_modal/obj_merchant_modal.yy",},},

@@ -1,10 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 267D102A
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "is_interactable"
-is_interactable = false;
-
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0F08564E
