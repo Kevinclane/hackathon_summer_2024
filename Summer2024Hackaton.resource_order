@@ -52,7 +52,6 @@
     {"name":"obj_pig_1","order":1,"path":"objects/obj_pig_1/obj_pig_1.yy",},
     {"name":"obj_pig_2","order":2,"path":"objects/obj_pig_2/obj_pig_2.yy",},
     {"name":"obj_player_overlay_1","order":1,"path":"objects/obj_player_overlay_1/obj_player_overlay_1.yy",},
-    {"name":"obj_tombstone","order":8,"path":"objects/obj_tombstone/obj_tombstone.yy",},
     {"name":"Interaction_With_Wood_02","order":1,"path":"sounds/Interaction_With_Wood_02/Interaction_With_Wood_02.yy",},
     {"name":"Town___Pleasant_Peasants","order":1,"path":"sounds/Town___Pleasant_Peasants/Town___Pleasant_Peasants.yy",},
     {"name":"__Goblin01_Attack_000","order":4,"path":"sprites/__Goblin01_Attack_000/__Goblin01_Attack_000.yy",},

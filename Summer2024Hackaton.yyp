@@ -78,7 +78,6 @@
     {"id":{"name":"obj_pig_1","path":"objects/obj_pig_1/obj_pig_1.yy",},},
     {"id":{"name":"obj_pig_2","path":"objects/obj_pig_2/obj_pig_2.yy",},},
     {"id":{"name":"obj_player_overlay_1","path":"objects/obj_player_overlay_1/obj_player_overlay_1.yy",},},
-    {"id":{"name":"obj_tombstone","path":"objects/obj_tombstone/obj_tombstone.yy",},},
     {"id":{"name":"obj_tree_grove","path":"objects/obj_tree_grove/obj_tree_grove.yy",},},
     {"id":{"name":"pig_pen","path":"objects/pig_pen/pig_pen.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
