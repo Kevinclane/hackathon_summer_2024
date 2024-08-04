@@ -26,13 +26,30 @@ function harvest()
 	/// @DnDArgument : "function" "calculate_harvest_value"
 	harvest_value = calculate_harvest_value();
 
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 5C809E45
+	/// @DnDParent : 70CE11E0
+	/// @DnDArgument : "var" "item"
+	/// @DnDArgument : "function" "variable_clone"
+	/// @DnDArgument : "arg" "obj_items_list.wood"
+	item = variable_clone(obj_items_list.wood);
+
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 198412CF
 	/// @DnDParent : 70CE11E0
-	/// @DnDArgument : "expr" "Player.resources.wood + harvest_value"
-	/// @DnDArgument : "var" "Player.resources.wood"
-	Player.resources.wood = Player.resources.wood + harvest_value;
+	/// @DnDArgument : "expr" "harvest_value"
+	/// @DnDArgument : "var" "item.count"
+	item.count = harvest_value;
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 4BBD5C05
+	/// @DnDParent : 70CE11E0
+	/// @DnDArgument : "function" "obj_inventory.addItem"
+	/// @DnDArgument : "arg" "item"
+	obj_inventory.addItem(item);
 }
 
 /// @DnDAction : YoYo Games.Common.Function

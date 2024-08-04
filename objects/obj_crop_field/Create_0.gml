@@ -86,13 +86,14 @@ function harvest()
 		/// @DnDParent : 6AEFFA24
 		/// @DnDArgument : "const" ""wheat""
 		case "wheat":
-			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDAction : YoYo Games.Common.Function_Call
 			/// @DnDVersion : 1
-			/// @DnDHash : 74091757
+			/// @DnDHash : 35E9ACEA
 			/// @DnDParent : 2AE216C6
-			/// @DnDArgument : "expr" "Player.resources.wheat + harvest_value"
-			/// @DnDArgument : "var" "Player.resources.wheat"
-			Player.resources.wheat = Player.resources.wheat + harvest_value;
+			/// @DnDArgument : "var" "item"
+			/// @DnDArgument : "function" "variable_clone"
+			/// @DnDArgument : "arg" "obj_items_list.wheat"
+			item = variable_clone(obj_items_list.wheat);
 			break;
 	
 		/// @DnDAction : YoYo Games.Switch.Case
@@ -101,15 +102,32 @@ function harvest()
 		/// @DnDParent : 6AEFFA24
 		/// @DnDArgument : "const" ""radish""
 		case "radish":
-			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDAction : YoYo Games.Common.Function_Call
 			/// @DnDVersion : 1
-			/// @DnDHash : 79456CA4
+			/// @DnDHash : 1E884840
 			/// @DnDParent : 3123B550
-			/// @DnDArgument : "expr" "Player.resources.radish + harvest_value"
-			/// @DnDArgument : "var" "Player.resources.radish"
-			Player.resources.radish = Player.resources.radish + harvest_value;
+			/// @DnDArgument : "var" "item"
+			/// @DnDArgument : "function" "variable_clone"
+			/// @DnDArgument : "arg" "obj_items_list.radish"
+			item = variable_clone(obj_items_list.radish);
 			break;
 	}
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 3370C6B3
+	/// @DnDParent : 11B3F9AD
+	/// @DnDArgument : "expr" "harvest_value"
+	/// @DnDArgument : "var" "item.count"
+	item.count = harvest_value;
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 40E11F13
+	/// @DnDParent : 11B3F9AD
+	/// @DnDArgument : "function" "obj_inventory.addItem"
+	/// @DnDArgument : "arg" "item"
+	obj_inventory.addItem(item);
 }
 
 /// @DnDAction : YoYo Games.Common.Function

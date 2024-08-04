@@ -47,6 +47,7 @@
     {"name":"obj_editor_wall","order":4,"path":"objects/obj_editor_wall/obj_editor_wall.yy",},
     {"name":"obj_interactable_manager","order":1,"path":"objects/obj_interactable_manager/obj_interactable_manager.yy",},
     {"name":"obj_inventory","order":12,"path":"objects/obj_inventory/obj_inventory.yy",},
+    {"name":"obj_items_list","order":13,"path":"objects/obj_items_list/obj_items_list.yy",},
     {"name":"obj_manager","order":2,"path":"objects/obj_manager/obj_manager.yy",},
     {"name":"obj_merchant_interactable","order":1,"path":"objects/obj_merchant_interactable/obj_merchant_interactable.yy",},
     {"name":"obj_merchant_modal","order":2,"path":"objects/obj_merchant_modal/obj_merchant_modal.yy",},

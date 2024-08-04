@@ -22,13 +22,6 @@ if(is_interacting)
 		/// @DnDArgument : "not" "1"
 		if(!(interactable_object == 0))
 		{
-			/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-			/// @DnDVersion : 1
-			/// @DnDHash : 49680652
-			/// @DnDParent : 04C27D31
-			/// @DnDArgument : "msg" ""F not detected""
-			show_debug_message(string("F not detected"));
-		
 			/// @DnDAction : YoYo Games.Common.Function_Call
 			/// @DnDVersion : 1
 			/// @DnDHash : 42C70CB6
@@ -53,13 +46,6 @@ if(is_interacting)
 /// @DnDArgument : "expr" "pending_clear"
 if(pending_clear)
 {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 64786409
-	/// @DnDParent : 10908B5B
-	/// @DnDArgument : "msg" ""clearing""
-	show_debug_message(string("clearing"));
-
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 35723EE1
@@ -90,13 +76,6 @@ if(pending_clear)
 	/// @DnDArgument : "object" "obj_interactable_manager"
 	/// @DnDSaveInfo : "object" "obj_interactable_manager"
 	variable = instance_number(obj_interactable_manager);
-
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 697FC2D4
-	/// @DnDParent : 10908B5B
-	/// @DnDArgument : "msg" "variable"
-	show_debug_message(string(variable));
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable

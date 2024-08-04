@@ -61,6 +61,7 @@
     {"name":"inst_612C978","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_138306E5","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2A2DB5F8","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_33A25540","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -132,6 +133,7 @@
         {"$GMRInstance":"","%Name":"crop_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"crop_3","objectId":{"name":"obj_crop_field","path":"objects/obj_crop_field/obj_crop_field.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":928.0,},
         {"$GMRInstance":"","%Name":"inst_2A0C124D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A0C124D","objectId":{"name":"obj_interactable_manager","path":"objects/obj_interactable_manager/obj_interactable_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":224.0,},
         {"$GMRInstance":"","%Name":"inst_2A2DB5F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A2DB5F8","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_33A25540","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33A25540","objectId":{"name":"obj_items_list","path":"objects/obj_items_list/obj_items_list.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":416.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_Mid","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_69D9659C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_69D9659C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"AppleTree_allSeasons_3","path":"sprites/AppleTree_allSeasons_3/AppleTree_allSeasons_3.yy",},"x":1024.0,"y":-32.0,},

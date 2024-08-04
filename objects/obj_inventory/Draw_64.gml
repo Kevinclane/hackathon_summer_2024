@@ -48,15 +48,6 @@ draw_sprite(Toolbox_Background, 0, x_offset - slot_buffer, y_offset - slot_buffe
 /// @DnDArgument : "op" "1"
 /// @DnDArgument : "value" "bag_height"
 while ((i < bag_height)) {
-	/// @DnDAction : YoYo Games.Drawing.Set_Color
-	/// @DnDVersion : 1
-	/// @DnDHash : 28EF5D1A
-	/// @DnDParent : 1E1724B2
-	/// @DnDArgument : "color" "$FF000000"
-	draw_set_colour($FF000000 & $ffffff);
-	var l28EF5D1A_0=($FF000000 >> 24);
-	draw_set_alpha(l28EF5D1A_0 / $ff);
-
 	/// @DnDAction : YoYo Games.Data Structures.Grid_Get_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 58582DC3
@@ -82,24 +73,17 @@ while ((i < bag_height)) {
 		/// @DnDArgument : "y" "y_offset"
 		/// @DnDArgument : "sprite" "x_1.sprite"
 		draw_sprite(x_1.sprite, 0, x_offset, y_offset);
-	}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 43FB199D
-	/// @DnDParent : 1E1724B2
-	else
-	{
-		/// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
-		/// @DnDHash : 56FFDC15
-		/// @DnDParent : 43FB199D
-		/// @DnDArgument : "x1" "x_offset"
-		/// @DnDArgument : "y1" "y_offset"
-		/// @DnDArgument : "x2" "x_offset + box_size"
-		/// @DnDArgument : "y2" "y_offset + box_size"
-		/// @DnDArgument : "fill" "1"
-		draw_rectangle(x_offset, y_offset, x_offset + box_size, y_offset + box_size, 0);
+		/// @DnDHash : 1726904A
+		/// @DnDParent : 0D4EC53B
+		/// @DnDArgument : "x" "x_offset + 30"
+		/// @DnDArgument : "y" "y_offset + 30"
+		/// @DnDArgument : "xscale" ".75"
+		/// @DnDArgument : "yscale" ".75"
+		/// @DnDArgument : "caption" "x_1.count"
+		draw_text_transformed(x_offset + 30, y_offset + 30, string(x_1.count) + "", .75, .75, 0);
 	}
 
 	/// @DnDAction : YoYo Games.Data Structures.Grid_Get_Value
@@ -128,24 +112,17 @@ while ((i < bag_height)) {
 		/// @DnDArgument : "y" "y_offset"
 		/// @DnDArgument : "sprite" "x_2.sprite"
 		draw_sprite(x_2.sprite, 0, x_offset + box_size + slot_buffer, y_offset);
-	}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 0A7BB4B4
-	/// @DnDParent : 1E1724B2
-	else
-	{
-		/// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
-		/// @DnDHash : 3002080D
-		/// @DnDParent : 0A7BB4B4
-		/// @DnDArgument : "x1" "x_offset + box_size + slot_buffer"
-		/// @DnDArgument : "y1" "y_offset"
-		/// @DnDArgument : "x2" "x_offset + (2 * box_size) + slot_buffer"
-		/// @DnDArgument : "y2" "y_offset + box_size"
-		/// @DnDArgument : "fill" "1"
-		draw_rectangle(x_offset + box_size + slot_buffer, y_offset, x_offset + (2 * box_size) + slot_buffer, y_offset + box_size, 0);
+		/// @DnDHash : 2A0819EC
+		/// @DnDParent : 3B1AB9F6
+		/// @DnDArgument : "x" "x_offset + box_size + slot_buffer + 30"
+		/// @DnDArgument : "y" "y_offset + 30"
+		/// @DnDArgument : "xscale" ".75"
+		/// @DnDArgument : "yscale" ".75"
+		/// @DnDArgument : "caption" "x_2.count"
+		draw_text_transformed(x_offset + box_size + slot_buffer + 30, y_offset + 30, string(x_2.count) + "", .75, .75, 0);
 	}
 
 	/// @DnDAction : YoYo Games.Data Structures.Grid_Get_Value
@@ -174,24 +151,17 @@ while ((i < bag_height)) {
 		/// @DnDArgument : "y" "y_offset"
 		/// @DnDArgument : "sprite" "x_3.sprite"
 		draw_sprite(x_3.sprite, 0, x_offset + (2 * box_size) + (2 * slot_buffer), y_offset);
-	}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 412B3406
-	/// @DnDParent : 1E1724B2
-	else
-	{
-		/// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
-		/// @DnDHash : 0ACFA390
-		/// @DnDParent : 412B3406
-		/// @DnDArgument : "x1" "x_offset + (2 * box_size) + (2 * slot_buffer)"
-		/// @DnDArgument : "y1" "y_offset"
-		/// @DnDArgument : "x2" "x_offset + (3 * box_size) + (2 * slot_buffer)"
-		/// @DnDArgument : "y2" "y_offset + box_size"
-		/// @DnDArgument : "fill" "1"
-		draw_rectangle(x_offset + (2 * box_size) + (2 * slot_buffer), y_offset, x_offset + (3 * box_size) + (2 * slot_buffer), y_offset + box_size, 0);
+		/// @DnDHash : 22146F3A
+		/// @DnDParent : 5390D6BD
+		/// @DnDArgument : "x" "x_offset + (2 * box_size) + (2 * slot_buffer) + 30"
+		/// @DnDArgument : "y" "y_offset + 30"
+		/// @DnDArgument : "xscale" ".75"
+		/// @DnDArgument : "yscale" ".75"
+		/// @DnDArgument : "caption" "x_3.count"
+		draw_text_transformed(x_offset + (2 * box_size) + (2 * slot_buffer) + 30, y_offset + 30, string(x_3.count) + "", .75, .75, 0);
 	}
 
 	/// @DnDAction : YoYo Games.Data Structures.Grid_Get_Value
@@ -220,24 +190,17 @@ while ((i < bag_height)) {
 		/// @DnDArgument : "y" "y_offset"
 		/// @DnDArgument : "sprite" "x_4.sprite"
 		draw_sprite(x_4.sprite, 0, x_offset + (3 * box_size) + (3 * slot_buffer), y_offset);
-	}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 72385A6B
-	/// @DnDParent : 1E1724B2
-	else
-	{
-		/// @DnDAction : YoYo Games.Drawing.Draw_Rectangle
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
-		/// @DnDHash : 34021BF2
-		/// @DnDParent : 72385A6B
-		/// @DnDArgument : "x1" "x_offset + (3 * box_size) + (3 * slot_buffer)"
-		/// @DnDArgument : "y1" "y_offset"
-		/// @DnDArgument : "x2" "x_offset + (4 * box_size) + (3 * slot_buffer)"
-		/// @DnDArgument : "y2" "y_offset + box_size"
-		/// @DnDArgument : "fill" "1"
-		draw_rectangle(x_offset + (3 * box_size) + (3 * slot_buffer), y_offset, x_offset + (4 * box_size) + (3 * slot_buffer), y_offset + box_size, 0);
+		/// @DnDHash : 02C68CC5
+		/// @DnDParent : 3F1ED562
+		/// @DnDArgument : "x" "x_offset + (3 * box_size) + (3 * slot_buffer) + 30"
+		/// @DnDArgument : "y" "y_offset + 30"
+		/// @DnDArgument : "xscale" ".75"
+		/// @DnDArgument : "yscale" ".75"
+		/// @DnDArgument : "caption" "x_4.count"
+		draw_text_transformed(x_offset + (3 * box_size) + (3 * slot_buffer) + 30, y_offset + 30, string(x_4.count) + "", .75, .75, 0);
 	}
 
 	/// @DnDAction : YoYo Games.Common.Variable
@@ -256,10 +219,3 @@ while ((i < bag_height)) {
 	/// @DnDArgument : "var" "y_offset"
 	y_offset = y_offset + slot_buffer + box_size;
 }
-
-/// @DnDAction : YoYo Games.Drawing.Set_Color
-/// @DnDVersion : 1
-/// @DnDHash : 46F6833F
-draw_set_colour($FFFFFFFF & $ffffff);
-var l46F6833F_0=($FFFFFFFF >> 24);
-draw_set_alpha(l46F6833F_0 / $ff);

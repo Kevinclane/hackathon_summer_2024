@@ -6,13 +6,6 @@
 /// @DnDArgument : "value" "self"
 if(!(obj_interactable_manager.interactable_object == self))
 {
-	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 29DD705C
-	/// @DnDParent : 144F2958
-	/// @DnDArgument : "msg" ""setting crop field""
-	show_debug_message(string("setting crop field"));
-
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 54B2C927
