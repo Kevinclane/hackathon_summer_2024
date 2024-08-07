@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":96,"eventType":9,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_inventory",
@@ -33,7 +34,7 @@
     {"$GMObjectProperty":"v1","%Name":"box_size","filters":[],"listItems":[],"multiselect":false,"name":"box_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"40","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"slot_buffer","filters":[],"listItems":[],"multiselect":false,"name":"slot_buffer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"position","filters":[],"listItems":[],"multiselect":false,"name":"position","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"{x: 0, y: 0}","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"dragging","filters":[],"listItems":[],"multiselect":false,"name":"dragging","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"draggingSlot","filters":[],"listItems":[],"multiselect":false,"name":"draggingSlot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

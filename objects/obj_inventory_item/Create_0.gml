@@ -7,6 +7,14 @@ function setItem(itemToSet)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
+	/// @DnDHash : 664B9A08
+	/// @DnDParent : 6EC847B6
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "active"
+	active = false;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
 	/// @DnDHash : 3467989A
 	/// @DnDParent : 6EC847B6
 	/// @DnDArgument : "expr" "itemToSet"
@@ -24,7 +32,9 @@ function setItem(itemToSet)
 		/// @DnDVersion : 1
 		/// @DnDHash : 07B09834
 		/// @DnDParent : 20F68390
-		sprite_index = noone;
+		/// @DnDArgument : "spriteind" "spr_empty_icon"
+		/// @DnDSaveInfo : "spriteind" "spr_empty_icon"
+		sprite_index = spr_empty_icon;
 		image_index = 0;
 	}
 

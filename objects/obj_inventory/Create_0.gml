@@ -69,6 +69,13 @@ function findMatchingItem(item, needsStackRoom=true)
 			/// @DnDArgument : "not" "1"
 			if(!(slotInstance.item == 0))
 			{
+				/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+				/// @DnDVersion : 1
+				/// @DnDHash : 050DBF22
+				/// @DnDParent : 6E5A0C36
+				/// @DnDArgument : "msg" "slotInstance.item"
+				show_debug_message(string(slotInstance.item));
+			
 				/// @DnDAction : YoYo Games.Common.If_Variable
 				/// @DnDVersion : 1
 				/// @DnDHash : 7F8541D0
@@ -735,6 +742,251 @@ function setupInventorySlots()
 	setDefaultXY();
 }
 
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 4D856648
+/// @DnDArgument : "funcName" "slotInteract"
+/// @DnDArgument : "arg" "slotInstance"
+function slotInteract(slotInstance) 
+{
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 7178E984
+	/// @DnDComment : Second clicked slot has no item.$(13_10)Move item from first clicked to second.$(13_10)$(13_10)If this is the second item clicked, set slot$(13_10)to active = false
+	/// @DnDParent : 4D856648
+	/// @DnDArgument : "var" "slotInstance.item"
+	if(slotInstance.item == 0)
+	{
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 399328E4
+		/// @DnDParent : 7178E984
+		/// @DnDArgument : "var" "draggingSlot"
+		/// @DnDArgument : "not" "1"
+		if(!(draggingSlot == 0))
+		{
+			/// @DnDAction : YoYo Games.Common.Function_Call
+			/// @DnDVersion : 1
+			/// @DnDHash : 149D4D41
+			/// @DnDParent : 399328E4
+			/// @DnDArgument : "function" "slotInstance.setItem"
+			/// @DnDArgument : "arg" "draggingSlot.item"
+			slotInstance.setItem(draggingSlot.item);
+		
+			/// @DnDAction : YoYo Games.Common.Function_Call
+			/// @DnDVersion : 1
+			/// @DnDHash : 057BB91F
+			/// @DnDParent : 399328E4
+			/// @DnDArgument : "function" "draggingSlot.setItem"
+			/// @DnDArgument : "arg" "0"
+			draggingSlot.setItem(0);
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 5B072FDC
+			/// @DnDParent : 399328E4
+			/// @DnDArgument : "var" "draggingSlot"
+			draggingSlot = 0;
+		}
+	
+		/// @DnDAction : YoYo Games.Common.Else
+		/// @DnDVersion : 1
+		/// @DnDHash : 50C4AABD
+		/// @DnDParent : 7178E984
+		else
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 62EEF578
+			/// @DnDParent : 50C4AABD
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "slotInstance.active"
+			slotInstance.active = false;
+		}
+	}
+
+	/// @DnDAction : YoYo Games.Common.Else
+	/// @DnDVersion : 1
+	/// @DnDHash : 7534E051
+	/// @DnDParent : 4D856648
+	else
+	{
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 41C45C75
+		/// @DnDComment : First slot clicked that has an item
+		/// @DnDParent : 7534E051
+		/// @DnDArgument : "var" "draggingSlot"
+		if(draggingSlot == 0)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 3FF7031D
+			/// @DnDParent : 41C45C75
+			/// @DnDArgument : "expr" "slotInstance"
+			/// @DnDArgument : "var" "draggingSlot"
+			draggingSlot = slotInstance;
+		}
+	
+		/// @DnDAction : YoYo Games.Common.Else
+		/// @DnDVersion : 1
+		/// @DnDHash : 176D7CEE
+		/// @DnDParent : 7534E051
+		else
+		{
+			/// @DnDAction : YoYo Games.Common.If_Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 07C001C9
+			/// @DnDComment : Slot clicked on is the same as the$(13_10)first clicked slot.$(13_10)Cancel active slot tracking.
+			/// @DnDParent : 176D7CEE
+			/// @DnDArgument : "var" "slotInstance"
+			/// @DnDArgument : "value" "draggingSlot"
+			if(slotInstance == draggingSlot)
+			{
+				/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 5C67B6CE
+				/// @DnDParent : 07C001C9
+				/// @DnDArgument : "expr" "false"
+				/// @DnDArgument : "var" "draggingSlot.active"
+				draggingSlot.active = false;
+			
+				/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 311E6C48
+				/// @DnDParent : 07C001C9
+				/// @DnDArgument : "var" "draggingSlot"
+				draggingSlot = 0;
+			}
+		
+			/// @DnDAction : YoYo Games.Common.Else
+			/// @DnDVersion : 1
+			/// @DnDHash : 40E0C23E
+			/// @DnDComment : First clicked slot and second clicked$(13_10)are different slots.
+			/// @DnDParent : 176D7CEE
+			else
+			{
+				/// @DnDAction : YoYo Games.Common.If_Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 1D333A9A
+				/// @DnDComment : First and second clicked slots have the same item.$(13_10)Merge stacks
+				/// @DnDParent : 40E0C23E
+				/// @DnDArgument : "var" "draggingSlot.item.item"
+				/// @DnDArgument : "value" "slotInstance.item.item"
+				if(draggingSlot.item.item == slotInstance.item.item)
+				{
+					/// @DnDAction : YoYo Games.Common.Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 63DC20C9
+					/// @DnDParent : 1D333A9A
+					/// @DnDArgument : "expr" "draggingSlot.item.count + slotInstance.item.count"
+					/// @DnDArgument : "var" "totalCount"
+					totalCount = draggingSlot.item.count + slotInstance.item.count;
+				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 4A271E3F
+					/// @DnDComment : Total count of items greater than max stack size$(13_10)Set second clicked to full stack.$(13_10)Set first clicked to remainder.
+					/// @DnDParent : 1D333A9A
+					/// @DnDArgument : "var" "totalCount"
+					/// @DnDArgument : "op" "2"
+					/// @DnDArgument : "value" "slotInstance.item.stack_size"
+					if(totalCount > slotInstance.item.stack_size)
+					{
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 14FEB171
+						/// @DnDParent : 4A271E3F
+						/// @DnDArgument : "expr" "slotInstance.item.stack_size"
+						/// @DnDArgument : "var" "slotInstance.item.count"
+						slotInstance.item.count = slotInstance.item.stack_size;
+					
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 1AF6DDB7
+						/// @DnDParent : 4A271E3F
+						/// @DnDArgument : "expr" "totalCount - slotInstance.item.stack_size"
+						/// @DnDArgument : "var" "draggingSlot.item.count"
+						draggingSlot.item.count = totalCount - slotInstance.item.stack_size;
+					}
+				
+					/// @DnDAction : YoYo Games.Common.Else
+					/// @DnDVersion : 1
+					/// @DnDHash : 22087939
+					/// @DnDComment : Total count is equal or less than max stack size$(13_10)Set second clicked to total count$(13_10)Clear first clicked item$(13_10)
+					/// @DnDParent : 1D333A9A
+					else
+					{
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 4E506725
+						/// @DnDParent : 22087939
+						/// @DnDArgument : "expr" "slotInstance.item.count + draggingSlot.item.count"
+						/// @DnDArgument : "var" "slotInstance.item.count"
+						slotInstance.item.count = slotInstance.item.count + draggingSlot.item.count;
+					
+						/// @DnDAction : YoYo Games.Common.Function_Call
+						/// @DnDVersion : 1
+						/// @DnDHash : 3BDB9D4E
+						/// @DnDParent : 22087939
+						/// @DnDArgument : "function" "draggingSlot.setItem"
+						/// @DnDArgument : "arg" "0"
+						draggingSlot.setItem(0);
+					}
+				}
+			
+				/// @DnDAction : YoYo Games.Common.Else
+				/// @DnDVersion : 1
+				/// @DnDHash : 0F363652
+				/// @DnDComment : First clicked and second clicked are different items$(13_10)Swap their positions
+				/// @DnDParent : 40E0C23E
+				else
+				{
+					/// @DnDAction : YoYo Games.Common.Function_Call
+					/// @DnDVersion : 1
+					/// @DnDHash : 28138243
+					/// @DnDParent : 0F363652
+					/// @DnDArgument : "var" "clone"
+					/// @DnDArgument : "function" "variable_clone"
+					/// @DnDArgument : "arg" "draggingSlot.item"
+					clone = variable_clone(draggingSlot.item);
+				
+					/// @DnDAction : YoYo Games.Common.Function_Call
+					/// @DnDVersion : 1
+					/// @DnDHash : 0A276696
+					/// @DnDParent : 0F363652
+					/// @DnDArgument : "function" "draggingSlot.setItem"
+					/// @DnDArgument : "arg" "slotInstance.item"
+					draggingSlot.setItem(slotInstance.item);
+				
+					/// @DnDAction : YoYo Games.Common.Function_Call
+					/// @DnDVersion : 1
+					/// @DnDHash : 777B8BF5
+					/// @DnDParent : 0F363652
+					/// @DnDArgument : "function" "slotInstance.setItem"
+					/// @DnDArgument : "arg" "clone"
+					slotInstance.setItem(clone);
+				}
+			}
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 715669E5
+			/// @DnDParent : 176D7CEE
+			/// @DnDArgument : "var" "draggingSlot"
+			draggingSlot = 0;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 00FD3E2F
+			/// @DnDParent : 176D7CEE
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "draggingSlot.active"
+			draggingSlot.active = false;
+		}
+	}
+}
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 762E2E24
@@ -746,3 +998,10 @@ setDefaultXY();
 /// @DnDHash : 6F58D5A8
 /// @DnDArgument : "function" "setupInventorySlots"
 setupInventorySlots();
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 0CB85A26
+/// @DnDArgument : "function" "addItem"
+/// @DnDArgument : "arg" "{item: "wheat", sprite: spr_wheat_icon, count: 5, stack_size: 20}"
+addItem({item: "wheat", sprite: spr_wheat_icon, count: 5, stack_size: 20});

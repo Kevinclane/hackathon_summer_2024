@@ -91,6 +91,7 @@
     {"name":"pig_walk_right","order":3,"path":"sprites/pig_walk_right/pig_walk_right.yy",},
     {"name":"spr_axe_icon","order":5,"path":"sprites/spr_axe_icon/spr_axe_icon.yy",},
     {"name":"spr_editor_wall","order":6,"path":"sprites/spr_editor_wall/spr_editor_wall.yy",},
+    {"name":"spr_empty_icon","order":9,"path":"sprites/spr_empty_icon/spr_empty_icon.yy",},
     {"name":"spr_gold_coin_icon","order":3,"path":"sprites/spr_gold_coin_icon/spr_gold_coin_icon.yy",},
     {"name":"spr_interactable_area","order":8,"path":"sprites/spr_interactable_area/spr_interactable_area.yy",},
     {"name":"spr_meat_icon","order":8,"path":"sprites/spr_meat_icon/spr_meat_icon.yy",},

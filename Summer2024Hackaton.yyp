@@ -132,6 +132,7 @@
     {"id":{"name":"pig_walk_right","path":"sprites/pig_walk_right/pig_walk_right.yy",},},
     {"id":{"name":"spr_axe_icon","path":"sprites/spr_axe_icon/spr_axe_icon.yy",},},
     {"id":{"name":"spr_editor_wall","path":"sprites/spr_editor_wall/spr_editor_wall.yy",},},
+    {"id":{"name":"spr_empty_icon","path":"sprites/spr_empty_icon/spr_empty_icon.yy",},},
     {"id":{"name":"spr_gold_coin_icon","path":"sprites/spr_gold_coin_icon/spr_gold_coin_icon.yy",},},
     {"id":{"name":"spr_interactable_area","path":"sprites/spr_interactable_area/spr_interactable_area.yy",},},
     {"id":{"name":"spr_meat_icon","path":"sprites/spr_meat_icon/spr_meat_icon.yy",},},
