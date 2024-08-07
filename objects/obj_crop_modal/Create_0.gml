@@ -33,6 +33,14 @@ function startCrops(crop)
 		/// @DnDParent : 72EF17D5
 		/// @DnDArgument : "function" "obj_interactable_manager.closeModal"
 		obj_interactable_manager.closeModal();
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 5E57E5AD
+		/// @DnDParent : 72EF17D5
+		/// @DnDArgument : "function" "obj_console.addMessage"
+		/// @DnDArgument : "arg" ""Planted " + crop"
+		obj_console.addMessage("Planted " + crop);
 	}
 
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance

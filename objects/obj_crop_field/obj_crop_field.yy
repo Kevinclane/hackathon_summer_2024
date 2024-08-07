@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crop_field_interactable",
-    "path":"sprites/spr_crop_field_interactable/spr_crop_field_interactable.yy",
+    "name":"Crops_Interactable",
+    "path":"sprites/Crops_Interactable/Crops_Interactable.yy",
   },
   "spriteMaskId":null,
   "visible":true,

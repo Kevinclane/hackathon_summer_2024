@@ -47,10 +47,21 @@ function startChopping()
 /// @DnDArgument : "funcName" "stopChopping"
 function stopChopping() 
 {
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 	/// @DnDVersion : 1
-	/// @DnDHash : 29711FA8
-	/// @DnDApplyTo : self.overlay1
+	/// @DnDHash : 4D486427
 	/// @DnDParent : 764B390D
-	with(self.overlay1) instance_destroy();
+	/// @DnDArgument : "obj" "obj_player_overlay_1"
+	/// @DnDSaveInfo : "obj" "obj_player_overlay_1"
+	var l4D486427_0 = false;
+	l4D486427_0 = instance_exists(obj_player_overlay_1);
+	if(l4D486427_0)
+	{
+		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 29711FA8
+		/// @DnDApplyTo : self.overlay1
+		/// @DnDParent : 4D486427
+		with(self.overlay1) instance_destroy();
+	}
 }

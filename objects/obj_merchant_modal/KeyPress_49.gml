@@ -11,8 +11,8 @@ if(mode == "Sell")
 	/// @DnDParent : 64FF3886
 	/// @DnDArgument : "var" "item"
 	/// @DnDArgument : "function" "variable_clone"
-	/// @DnDArgument : "arg" "obj_items_list.wheat"
-	item = variable_clone(obj_items_list.wheat);
+	/// @DnDArgument : "arg" "obj_items_list.resources.wheat"
+	item = variable_clone(obj_items_list.resources.wheat);
 
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
@@ -38,8 +38,8 @@ if(mode == "Sell")
 		/// @DnDParent : 4560B295
 		/// @DnDArgument : "var" "addItem"
 		/// @DnDArgument : "function" "variable_clone"
-		/// @DnDArgument : "arg" "obj_items_list.gold"
-		addItem = variable_clone(obj_items_list.gold);
+		/// @DnDArgument : "arg" "obj_items_list.resources.gold"
+		addItem = variable_clone(obj_items_list.resources.gold);
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1

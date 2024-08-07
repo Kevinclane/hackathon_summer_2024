@@ -92,8 +92,8 @@ function harvest()
 			/// @DnDParent : 2AE216C6
 			/// @DnDArgument : "var" "item"
 			/// @DnDArgument : "function" "variable_clone"
-			/// @DnDArgument : "arg" "obj_items_list.wheat"
-			item = variable_clone(obj_items_list.wheat);
+			/// @DnDArgument : "arg" "obj_items_list.resources.wheat"
+			item = variable_clone(obj_items_list.resources.wheat);
 			break;
 	
 		/// @DnDAction : YoYo Games.Switch.Case
@@ -108,8 +108,8 @@ function harvest()
 			/// @DnDParent : 3123B550
 			/// @DnDArgument : "var" "item"
 			/// @DnDArgument : "function" "variable_clone"
-			/// @DnDArgument : "arg" "obj_items_list.radish"
-			item = variable_clone(obj_items_list.radish);
+			/// @DnDArgument : "arg" "obj_items_list.resources.radish"
+			item = variable_clone(obj_items_list.resources.radish);
 			break;
 	}
 
@@ -197,13 +197,6 @@ function interact()
 				/// @DnDArgument : "var" "modal.linked_crop"
 				modal.linked_crop = self;
 			
-				/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-				/// @DnDVersion : 1
-				/// @DnDHash : 3F75E977
-				/// @DnDParent : 07301720
-				/// @DnDArgument : "msg" ""modal: {0}", obj_interactable_manager.active_modal"
-				show_debug_message(string("modal: {0}", obj_interactable_manager.active_modal));
-			
 				/// @DnDAction : YoYo Games.Common.Variable
 				/// @DnDVersion : 1
 				/// @DnDHash : 32F0F760
@@ -226,6 +219,6 @@ function endInteract()
 	/// @DnDVersion : 1
 	/// @DnDHash : 3F58C85F
 	/// @DnDParent : 515C451F
-	/// @DnDArgument : "msg" ""empty""
-	show_debug_message(string("empty"));
+	/// @DnDArgument : "msg" ""No endInteract registered""
+	show_debug_message(string("No endInteract registered"));
 }

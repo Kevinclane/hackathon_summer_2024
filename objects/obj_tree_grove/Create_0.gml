@@ -8,8 +8,8 @@ function calculate_harvest_value()
 	/// @DnDVersion : 1
 	/// @DnDHash : 0D39EFDF
 	/// @DnDParent : 328158C5
-	/// @DnDArgument : "value" "base_harvest_value + Player.upgrades.axe"
-	return base_harvest_value + Player.upgrades.axe;
+	/// @DnDArgument : "value" "playerAxe.level"
+	return playerAxe.level;
 }
 
 /// @DnDAction : YoYo Games.Common.Function
@@ -32,8 +32,8 @@ function harvest()
 	/// @DnDParent : 70CE11E0
 	/// @DnDArgument : "var" "item"
 	/// @DnDArgument : "function" "variable_clone"
-	/// @DnDArgument : "arg" "obj_items_list.wood"
-	item = variable_clone(obj_items_list.wood);
+	/// @DnDArgument : "arg" "obj_items_list.resources.wood"
+	item = variable_clone(obj_items_list.resources.wood);
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -96,9 +96,9 @@ function endInteract()
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 74464B93
+	/// @DnDDisabled : 1
 	/// @DnDParent : 6908A99D
 	/// @DnDArgument : "function" "obj_audio_manager.stopChoppingSound"
-	obj_audio_manager.stopChoppingSound();
 }
 
 /// @DnDAction : YoYo Games.Common.Function
@@ -107,44 +107,68 @@ function endInteract()
 /// @DnDArgument : "funcName" "interact"
 function interact() 
 {
-	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 1FD2285A
+	/// @DnDHash : 5C2DE0DD
 	/// @DnDParent : 4C267706
-	/// @DnDArgument : "steps" "3 * 60"
-	alarm_set(0, 3 * 60);
-
-	/// @DnDAction : YoYo Games.Common.Set_Global
-	/// @DnDVersion : 1
-	/// @DnDHash : 2A23BDB2
-	/// @DnDParent : 4C267706
-	/// @DnDArgument : "value" "true"
-	/// @DnDArgument : "var" "global.game_is_paused"
-	global.game_is_paused = true;
-
-	/// @DnDAction : YoYo Games.Instances.Set_Sprite
-	/// @DnDVersion : 1
-	/// @DnDHash : 333308F0
-	/// @DnDApplyTo : {Player}
-	/// @DnDParent : 4C267706
-	/// @DnDArgument : "spriteind" "Swing_Up"
-	/// @DnDSaveInfo : "spriteind" "Swing_Up"
-	with(Player) {
-	sprite_index = Swing_Up;
-	image_index = 0;
+	/// @DnDArgument : "var" "playerAxe"
+	/// @DnDArgument : "not" "1"
+	if(!(playerAxe == 0))
+	{
+		/// @DnDAction : YoYo Games.Instances.Set_Alarm
+		/// @DnDVersion : 1
+		/// @DnDHash : 1FD2285A
+		/// @DnDParent : 5C2DE0DD
+		/// @DnDArgument : "steps" "3 * 60"
+		alarm_set(0, 3 * 60);
+	
+		/// @DnDAction : YoYo Games.Common.Set_Global
+		/// @DnDVersion : 1
+		/// @DnDHash : 2A23BDB2
+		/// @DnDParent : 5C2DE0DD
+		/// @DnDArgument : "value" "true"
+		/// @DnDArgument : "var" "global.game_is_paused"
+		global.game_is_paused = true;
+	
+		/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDVersion : 1
+		/// @DnDHash : 333308F0
+		/// @DnDApplyTo : {Player}
+		/// @DnDParent : 5C2DE0DD
+		/// @DnDArgument : "spriteind" "Swing_Up"
+		/// @DnDSaveInfo : "spriteind" "Swing_Up"
+		with(Player) {
+		sprite_index = Swing_Up;
+		image_index = 0;
+		}
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 0A897E83
+		/// @DnDParent : 5C2DE0DD
+		/// @DnDArgument : "function" "Player.startChopping"
+		Player.startChopping();
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 15958610
+		/// @DnDParent : 5C2DE0DD
+		/// @DnDArgument : "function" "obj_audio_manager.startChoppingSound"
+		obj_audio_manager.startChoppingSound();
 	}
 
-	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
-	/// @DnDHash : 0A897E83
+	/// @DnDHash : 55B7C235
 	/// @DnDParent : 4C267706
-	/// @DnDArgument : "function" "Player.startChopping"
-	Player.startChopping();
-
-	/// @DnDAction : YoYo Games.Common.Function_Call
-	/// @DnDVersion : 1
-	/// @DnDHash : 15958610
-	/// @DnDParent : 4C267706
-	/// @DnDArgument : "function" "obj_audio_manager.startChoppingSound"
-	obj_audio_manager.startChoppingSound();
+	else
+	{
+		/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 3A2B50B3
+		/// @DnDParent : 55B7C235
+		/// @DnDArgument : "function" "obj_console.addMessage"
+		/// @DnDArgument : "arg" ""You need an axe to do that.""
+		obj_console.addMessage("You need an axe to do that.");
+	}
 }
